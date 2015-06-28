@@ -1,0 +1,142 @@
+<!DOCTYPE>
+	<html>
+		<head>
+			<title>Tech Shop - products</title>
+			<!--script.js importato sotto al body per problemi di caricamento-->
+			<link href='http://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Cabin:400,400italic' rel='stylesheet' type='text/css'>
+			<link href='http://fonts.googleapis.com/css?family=Mallanna' rel='stylesheet' type='text/css'>
+
+			<link rel="stylesheet" type="text/css" href="style.css">
+		</head>
+		<body id="all">
+			<div id="titolo_div" class="noselect">
+				<p id="titolo">Tech SHOP</p>
+				<p id="by_who">by V-Nex group</p>
+			</div>
+			<div id="carrello" onclick="openCart()"></div>
+			<div id="separatore_orizzontale_titolo" ></div>	
+			<table id ="tabella">
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><div id ="separatore_tabella_verticale_piccolo"></div></td>
+					<td><div class="casella_titolo noselect"><p>Prodotto</p></div></td>
+					<td><div class="casella_titolo noselect"><p>Prezzo</p></div></td>
+					<td><div id ="separatore_tabella_verticale_grande"></div></td>
+					<td><div class="casella_titolo noselect"><p>Carrello</p></div></td>
+					<td><div id ="separatore_tabella_verticale_grande"></div></td>
+					<td><div class="casella_titolo noselect"><p>Magazzino</p></div></td>
+					<td><div class="casella_titolo noselect"><p>ID</p></div></td>
+				</tr>						
+				<tr class="riga">				
+					<td><div class="casella noselect" id="add_button" onclick="addProdotto('0')"><p>+</p></div></td>
+					<td><div class="casella noselect" id="remove_button" onclick="removeProdotto('0')"><p>-</p></div></td>
+					<td><div class="casella noselect"><img src="img/i5-4690K.png"/></div></td>
+					<td><div id ="separatore_tabella_verticale_piccolo"></div></td>
+					<td><div class="casella"><p id="nome_p0"></p></div></td>
+					<td><div class="casella noselect"><p id="prezzo_p0"></p></div></td>
+					<td><div id ="separatore_tabella_verticale_grande"></div></td>
+					<td><div class="casella noselect"><p id="carrello_n_p0"></p></div></td>
+					<td><div id ="separatore_tabella_verticale_grande"></div></td>
+					<td><div class="casella noselect"><p id="magazzino_n_p0"></p></div></td>
+					<td><div class="casella"><p id="id_n0"></p></div></td>								
+				</tr>
+				<tr class="riga">				
+					<td><div class="casella noselect" id="add_button" onclick="addProdotto('1')"><p>+</p></div></td>
+					<td><div class="casella noselect" id="remove_button" onclick="removeProdotto('1')"><p>-</p></div></td>
+					<td><div class="casella noselect"><img src="img/HyperX-4GB.png"/></div></td>
+					<td><div id ="separatore_tabella_verticale_piccolo"></div></td>
+					<td><div class="casella"><p id="nome_p1"></p></div></td>
+					<td><div class="casella noselect"><p id="prezzo_p1"></p></div></td>
+					<td><div id ="separatore_tabella_verticale_grande"></div></td>
+					<td><div class="casella noselect"><p id="carrello_n_p1"></p></div></td>
+					<td><div id ="separatore_tabella_verticale_grande"></div></td>
+					<td><div class="casella noselect"><p id="magazzino_n_p1"></p></div></td>
+					<td><div class="casella"><p id="id_n1"></p></div></td>								
+				</tr>
+				<tr class="riga">				
+					<td><div class="casella noselect" id="add_button" onclick="addProdotto('2')"><p>+</p></div></td>
+					<td><div class="casella noselect" id="remove_button" onclick="removeProdotto('2')"><p>-</p></div></td>
+					<td><div class="casella noselect"><img src="img/asus-sabertooth.png"/></div></td>
+					<td><div id ="separatore_tabella_verticale_piccolo"></div></td>
+					<td><div class="casella"><p id="nome_p2"></p></div></td>
+					<td><div class="casella noselect"><p id="prezzo_p2"></p></div></td>
+					<td><div id ="separatore_tabella_verticale_grande"></div></td>
+					<td><div class="casella noselect"><p id="carrello_n_p2"></p></div></td>
+					<td><div id ="separatore_tabella_verticale_grande"></div></td>
+					<td><div class="casella noselect"><p id="magazzino_n_p2"></p></div></td>
+					<td><div class="casella"><p id="id_n2"></p></div></td>								
+				</tr>
+				<tr class="riga">				
+					<td><div class="casella noselect" id="add_button" onclick="addProdotto('3')"><p>+</p></div></td>
+					<td><div class="casella noselect" id="remove_button" onclick="removeProdotto('3')"><p>-</p></div></td>
+					<td><div class="casella noselect"><img src="img/asus-750ti.png"/></div></td>
+					<td><div id ="separatore_tabella_verticale_piccolo"></div></td>
+					<td><div class="casella"><p id="nome_p3"></p></div></td>
+					<td><div class="casella noselect"><p id="prezzo_p3"></p></div></td>
+					<td><div id ="separatore_tabella_verticale_grande"></div></td>
+					<td><div class="casella noselect"><p id="carrello_n_p3"></p></div></td>
+					<td><div id ="separatore_tabella_verticale_grande"></div></td>
+					<td><div class="casella noselect"><p id="magazzino_n_p3"></p></div></td>
+					<td><div class="casella"><p id="id_n3"></p></div></td>								
+				</tr>
+				<tr class="riga">				
+					<td><div class="casella noselect" id="add_button" onclick="addProdotto('4')"><p>+</p></div></td>
+					<td><div class="casella noselect" id="remove_button" onclick="removeProdotto('4')"><p>-</p></div></td>
+					<td><div class="casella noselect"><img src="img/wd-1tb-black.png"/></div></td>
+					<td><div id ="separatore_tabella_verticale_piccolo"></div></td>
+					<td><div class="casella"><p id="nome_p4"></p></div></td>
+					<td><div class="casella noselect"><p id="prezzo_p4"></p></div></td>
+					<td><div id ="separatore_tabella_verticale_grande"></div></td>
+					<td><div class="casella noselect"><p id="carrello_n_p4"></p></div></td>
+					<td><div id ="separatore_tabella_verticale_grande"></div></td>
+					<td><div class="casella noselect"><p id="magazzino_n_p4"></p></div></td>
+					<td><div class="casella"><p id="id_n4"></p></div></td>								
+				</tr>
+				<tr class="riga">				
+					<td><div class="casella noselect" id="add_button" onclick="addProdotto('5')"><p>+</p></div></td>
+					<td><div class="casella noselect" id="remove_button" onclick="removeProdotto('5')"><p>-</p></div></td>
+					<td><div class="casella noselect"><img src="img/samsung-ssd-500gb.png"/></div></td>
+					<td><div id ="separatore_tabella_verticale_piccolo"></div></td>
+					<td><div class="casella"><p id="nome_p5"></p></div></td>
+					<td><div class="casella noselect"><p id="prezzo_p5"></p></div></td>
+					<td><div id ="separatore_tabella_verticale_grande"></div></td>
+					<td><div class="casella noselect"><p id="carrello_n_p5"></p></div></td>
+					<td><div id ="separatore_tabella_verticale_grande"></div></td>
+					<td><div class="casella noselect"><p id="magazzino_n_p5"></p></div></td>
+					<td><div class="casella"><p id="id_n5"></p></div></td>								
+				</tr>
+				<tr class="riga">				
+					<td><div class="casella noselect" id="add_button" onclick="addProdotto('6')"><p>+</p></div></td>
+					<td><div class="casella noselect" id="remove_button" onclick="removeProdotto('6')"><p>-</p></div></td>
+					<td><div class="casella noselect"><img src="img/cm-storm-stryker.png"/></div></td>
+					<td><div id ="separatore_tabella_verticale_piccolo"></div></td>
+					<td><div class="casella"><p id="nome_p6"></p></div></td>
+					<td><div class="casella noselect"><p id="prezzo_p6"></p></div></td>
+					<td><div id ="separatore_tabella_verticale_grande"></div></td>
+					<td><div class="casella noselect"><p id="carrello_n_p6"></p></div></td>
+					<td><div id ="separatore_tabella_verticale_grande"></div></td>
+					<td><div class="casella noselect"><p id="magazzino_n_p6"></p></div></td>
+					<td><div class="casella"><p id="id_n6"></p></div></td>								
+				</tr>
+				<tr class="riga">				
+					<td><div class="casella noselect" id="add_button" onclick="addProdotto('7')"><p>+</p></div></td>
+					<td><div class="casella noselect" id="remove_button" onclick="removeProdotto('7')"><p>-</p></div></td>
+					<td><div class="casella noselect"><img src="img/artic-freezer-xtreme-r2.png"/></div></td>
+					<td><div id ="separatore_tabella_verticale_piccolo"></div></td>
+					<td><div class="casella"><p id="nome_p7"></p></div></td>
+					<td><div class="casella noselect"><p id="prezzo_p7"></p></div></td>
+					<td><div id ="separatore_tabella_verticale_grande"></div></td>
+					<td><div class="casella noselect"><p id="carrello_n_p7"></p></div></td>
+					<td><div id ="separatore_tabella_verticale_grande"></div></td>
+					<td><div class="casella noselect"><p id="magazzino_n_p7"></p></div></td>
+					<td><div class="casella"><p id="id_n7"></p></div></td>						
+				</tr>
+			</table>
+			<div id="separatore_orizzontale_grande" ></div>	
+		</body>
+		<script type="text/javascript" src="script-index.js"></script>
+	</html>
